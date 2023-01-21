@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nikon</title>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hmt.css">
+    <style>
+      .carousel-caption h3
+      {
+        font-family: cursive;
+        font-style: italic;
+        font-variant: small-caps;
+        font-weight: 600;
+        font-size: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      #jq
+      {
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        padding: 50px;
+        display: none;
+      }
+      #jq1
+      {
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        padding: 50px;
+        display: none;
+      }
+      #jq2
+      {
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        padding: 50px;
+        display: none;
+      }
+      h5
+      {
+        font-weight:bold;
+        font-family:cursive;
+      }
+      table,th,td
+      {
+        padding-left:250px;
+        text-align:justify;
+        width:50%;
+      }
+      .cost
+      {
+        padding-left: 104px;
+        font-weight:bold;
+        font-family:cursive;
+      }
+      #cost
+      {
+        padding-left: 94px;
+        font-weight:bold;
+        font-family:cursive;
+      }
+      #gallery
+      {
+        background-color:white;
+      }
+      #gallery img
+      {
+        width: 300px;
+        height: 256px;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#btn1").click(function(){
+          $("#jq").fadeIn(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#back").click(function(){
+          $("#jq").fadeOut(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#btn2").click(function(){
+          $("#jq1").fadeIn(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#back1").click(function(){
+          $("#jq1").fadeOut(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#btn3").click(function(){
+          $("#jq2").fadeIn(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#back2").click(function(){
+          $("#jq2").fadeOut(3000);
+        });
+      });
+    </script>
+</head>
+<body>
+  <!--Navigation Bar Start-->
+  <header>
+    <nav class="navbar navbar-expand-md sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html" style="font-size:25px" id="OS">LIFESTYLE STORE</a>
+        <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html"  onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="canon.html">Camera</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="louis.html">Hand Watches</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="asus.html">Laptops</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bottom" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html" onmouseover="this.style.color='orange'" onmouseout="this.style.color='black'">Contact Us</a>
+            </li>
+            <li class="nav-item">
+            <a href="landingpage.html"><button type="button" class="btn btn-dark btn-outline-dark">Logout</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Navigation Bar Ends-->
+
+  <!--Title Section Start-->
+  <section>
+    <div class="jumbotron jumbotron-fluid text-center py-4 my-0">
+    <div class="container-fluid">
+      <h1 class="display-4 text-color-pink">NIKON</h1>
+      <p class="lead">I am Nikon, at the heart of the image.</p>
+    </div>
+  </div>
+  </section>
+  <!--Title Section Ends-->
+
+  <!--Places Cards Start-->
+  <section>
+  <div class="container-fluid py-5">
+    <hr class="w-25 mx-auto">
+    <h1 class="text-center text-capitalize pt-2">ITEMS</h1>
+    <hr class="w-25 mx-auto pt-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12 pl-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="Images/nd5300.jpg" alt="Card image cap" width="300" height="256">
+            <div class="card-body">
+              <h5 class="card-title">Nikon D5300</h5>
+              <hr w-25 mx-auto pt-3>
+              <p class="card-text">Contents will be added later.............</p>
+              <button type="button" class="btn btn-primary" id="btn1">Read More</button><span class="cost">Cost:INR 46,499</span>
+            </div>
+         </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-12 pl-5">
+         <div class="card h-100">
+           <img class="card-img-top" src="Images/nd3500.jpg" alt="Card image cap" width="300" height="256">
+             <div class="card-body">
+               <h5 class="card-title">Nikon D3500</h5>
+               <hr w-25 mx-auto pt-1>
+               <p class="card-text">Contents will be added later.............</p>
+               <button type="button" class="btn btn-primary" id="btn2">Read More</button><span class="cost">Cost:INR 36,367</span>
+             </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 pl-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="Images/nd5600.jpg" alt="Card image cap" width="300" height="256">
+              <div class="card-body">
+                <h5 class="card-title">Nikon D5600</h5>
+                <hr w-25 mx-auto pt-1>
+                <p class="card-text">Contents will be added later.............</p>
+                <button type="button" class="btn btn-primary" id="btn3">Read More</button><span id="cost">Cost:INR 147,021</span>
+              </div>
+           </div>
+         </div>
+    </div>
+  </div>
+  </section>
+  <!--Places Cards Ends-->
+
+  <!--Nikon D5300-->
+  <section>
+    <div class="container-fluid py-5" id="jq">
+      <hr class="w-50 mx-auto">
+      <h1 class="text-center text-capitalize pt-2">Nikon D5300</h1>
+      <hr class="w-50 mx-auto pt-5">
+      <div class="container-fluid">
+        <p class="lead" style="text-align:center"><u>Specifications</u></p>
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th scope="col"><u>Type</u></th>
+              <th scope="col"><u>Description</u></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">Full Model Name:</td>
+              <td>Nikon D5300 DSLR Camera</td>
+            </tr>
+            <tr>
+              <td scope="row">Resolution:</td>
+              <td>24.2 Megapixels</td>
+            </tr>
+            <tr>
+              <td scope="row">Sensor size:</td>
+              <td>23.5 x 15.6 mm CMOS sensor</td>
+            </tr>
+            <tr>
+              <td scope="row">Kit Lens:</td>
+              <td> Dual Kit DSLR 3.06x zoom18-55mm(29-88mm eq.)</td>
+            </tr>
+            <tr>
+              <td scope="row">Viewfinder:</td>
+              <td>Optical / LCD</td>
+            </tr>
+            <tr>
+              <td scope="row">Native ISO:</td>
+              <td>100 - 12,800</td>
+            </tr>
+            <tr>
+              <td scope="row">Extended ISO:</td>
+              <td>ISO 25600</td>
+            </tr>
+            <tr>
+              <td scope="row">Shutter:</td>
+              <td>1/4000sec. to 30sec</td>
+            </tr>
+            <tr>
+              <td scope="row">Max Aperture:</td>
+              <td>3.5 (kit lens)</td>
+            </tr>
+            <tr>
+              <td scope="row">Dimensions:</td>
+              <td>5.2 x 3.9 x 3.1 in.(133 x 100 x 79 mm)</td>
+            </tr>
+            <tr>
+              <td scope="row">Weight:</td>
+              <td>530gm</td>
+            </tr>
+            <tr>
+              <td scope="row">Availability:</td>
+              <td>07/2014</td>
+            </tr>
+            <tr>
+              <td scope="row">Manufacturer:</td>
+              <td>Nikon</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="lead" style="text-align:left"><b><u>INCLUSIONS:</u></b><br> 1. Camera Bag<br>2. Kit Lens<br>3. Charger<br>4. Blower
+          <br>5. Bag Belt<br>6. Memory Card && Compact-Disk</p><br>
+          </div>
+          <div class="container-fluid py-5" id="gallery">
+            <hr class="w-25 mx-auto">
+            <h1 class="text-center text-capitalize pt-2">GALLERY</h1>
+            <hr class="w-25 mx-auto pt-5">
+            <div class="row">
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/nd53001.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/nd53002.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/nd53003.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/nd53004.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/nd53005.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/nd53006.jpg" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+              <a href="cart.html"><button type="button" class="btn btn-primary" style="margin-top:20px;">Buy Now</button></a>
+              <button type="button" class="btn btn-primary" style="margin-top:20px;" id="back">Back to Top</button>
+            </div>
+        </div>
+    </section>
+  <!--Nikon D5300 Ends-->
+
+  <!--Nikon D3500-->
+  <section>
+    <div class="container-fluid py-5" id="jq1">
+      <hr class="w-50 mx-auto">
+      <h1 class="text-center text-capitalize pt-2">Nikon D3500</h1>
+      <hr class="w-50 mx-auto pt-5">
+      <div class="container-fluid">
+        <p class="lead" style="text-align:center"><u>Specifications</u></p>
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th scope="col"><u>Type</u></th>
+              <th scope="col"><u>Description</u></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">Full Model Name:</td>
+              <td>Nikon D3500 DSLR Camera</td>
+            </tr>
+            <tr>
+              <td scope="row">Resolution:</td>
+              <td>24.20 Megapixels</td>
+            </tr>
+            <tr>
+              <td scope="row">Sensor size:</td>
+              <td>23.5 X 15.6 mm CMOS</td>
+            </tr>
+            <tr>
+              <td scope="row">Kit Lens:</td>
+              <td>18 - 55 + 70 - 300 mm</td>
+            </tr>
+            <tr>
+              <td scope="row">Viewfinder:</td>
+              <td>Lens Mount: Nikon F</td>
+            </tr>
+            <tr>
+              <td scope="row">Native ISO:</td>
+              <td>100 to 6400</td>
+            </tr>
+            <tr>
+              <td scope="row">Extended ISO:</td>
+              <td>ISO 100-25600</td>
+            </tr>
+            <tr>
+              <td scope="row">Shutter:</td>
+              <td>1/4000 sec</td>
+            </tr>
+            <tr>
+              <td scope="row">Max Aperture:</td>
+              <td>1.5:1 (3:2)</td>
+            </tr>
+            <tr>
+              <td scope="row">Dimensions:</td>
+              <td>2.7 x 2.8" / 68.5 x 71.1 mm</td>
+            </tr>
+            <tr>
+              <td scope="row">Weight:</td>
+              <td>365gm</td>
+            </tr>
+            <tr>
+              <td scope="row">Availability:</td>
+              <td>08/2013</td>
+            </tr>
+            <tr>
+              <td scope="row">Manufacturer:</td>
+              <td>Nikon</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="lead" style="text-align:left"><b><u>INCLUSIONS:</u></b><br> 1. Camera Bag<br>2. Kit Lens<br>3. Charger<br>4. Blower
+          <br>5. Bag Belt<br>6. Memory Card && Compact-Disk</p><br>
+          </div>
+          <div class="container-fluid py-5" id="gallery">
+            <hr class="w-25 mx-auto">
+            <h1 class="text-center text-capitalize pt-2">GALLERY</h1>
+            <hr class="w-25 mx-auto pt-5">
+            <div class="row">
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/nd35001.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/nd35002.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/nd35003.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/nd35004.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/nd35005.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/nd35006.jpg" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+              <a href="cart.html"><button type="button" class="btn btn-primary" style="margin-top:20px;">Buy Now</button></a>
+              <button type="button" class="btn btn-primary" style="margin-top:20px;" id="back1">Back to Top</button>
+            </div>
+        </div>
+    </section>
+  <!--Nikon D3500 Ends-->
+
+    <!--Nikon D5600-->
+    <section>
+      <div class="container-fluid py-5" id="jq2">
+        <hr class="w-50 mx-auto">
+        <h1 class="text-center text-capitalize pt-2">Nikon D5600</h1>
+        <hr class="w-50 mx-auto pt-5">
+        <div class="container-fluid">
+          <p class="lead" style="text-align:center"><u>Specifications</u></p>
+          <table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th scope="col"><u>Type</u></th>
+                <th scope="col"><u>Description</u></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">Full Model Name:</td>
+                <td>Nikon D5600 DSLR Camera</td>
+              </tr>
+              <tr>
+                <td scope="row">Resolution:</td>
+                <td>24.2 Effective MP</td>
+              </tr>
+              <tr>
+                <td scope="row">Sensor size:</td>
+                <td>23.5 X 15.6 mm CMOS</td>
+              </tr>
+              <tr>
+                <td scope="row">Kit Lens:</td>
+                <td>1.5x that of lenses with fx format angle of view</td>
+              </tr>
+              <tr>
+                <td scope="row">Viewfinder:</td>
+                <td>AFP 18-55 & 70-300mm VR Lens</td>
+              </tr>
+              <tr>
+                <td scope="row">Native ISO:</td>
+                <td>100 to 6400</td>
+              </tr>
+              <tr>
+                <td scope="row">Extended ISO:</td>
+                <td>25600</td>
+              </tr>
+              <tr>
+                <td scope="row">Shutter:</td>
+                <td>1/4000 sec</td>
+              </tr>
+              <tr>
+                <td scope="row">Max Aperture:</td>
+                <td>11.25° to 360° depending on frame rate</td>
+              </tr>
+              <tr>
+                <td scope="row">Dimensions:</td>
+                <td>Approx. 7.1 x 7.6 x 15.5" (18.0 x 19.2 x 39.4 cm)</td>
+              </tr>
+              <tr>
+                <td scope="row">Weight:</td>
+                <td>465gm</td>
+              </tr>
+              <tr>
+                <td scope="row">Availability:</td>
+                <td>08/2015</td>
+              </tr>
+              <tr>
+                <td scope="row">Manufacturer:</td>
+                <td>Canon</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="lead" style="text-align:left"><b><u>INCLUSIONS:</u></b><br> 1. Camera Bag<br>2. Kit Lens<br>3. Charger<br>4. Blower
+            <br>5. Bag Belt<br>6. Memory Card && Compact-Disk</p><br>
+            </div>
+            <div class="container-fluid py-5" id="gallery">
+              <hr class="w-25 mx-auto">
+              <h1 class="text-center text-capitalize pt-2">GALLERY</h1>
+              <hr class="w-25 mx-auto pt-5">
+              <div class="row">
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                  <img src= "Images/nd56001.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                  <img src= "Images/nd56002.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                  <img src= "Images/nd56003.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                  <img src= "Images/nd56004.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                  <img src= "Images/nd56005.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                  <img src= "Images/nd56006.jpg" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+                <a href="cart.html"><button type="button" class="btn btn-primary" style="margin-top:20px;">Buy Now</button></a>
+                <button type="button" class="btn btn-primary" style="margin-top:20px;" id="back2">Back to Top</button>
+              </div>
+          </div>
+      </section>
+    <!--Nikon D5600 Ends-->
+
+  <!--Footer Section Starts-->
+  <footer id="bottom">
+   <div class="container-fluid padding">
+   <div class="row text-center">
+     <div class="col-md-4">
+       <p class="lead" style="font-family:cursive">LIFESTYLE STORE</p>
+       <hr class="light">
+       <p>+917717562336</p>
+       <p>+918003951093</p>
+       <p>lifestylestore@gmail.com</p>
+       <p>Office Address</p>
+       <p>City, State, pincode</p>
+     </div>
+     <div class="col-md-4">
+       <hr class="light">
+       <h5>Our Hours</h5>
+       <hr class="light">
+       <p>Monday: 9am - 5pm</p>
+       <p>Saturday: 10am - 4pm</p>
+       <p>Sunday: closed</p>
+     </div>
+     <div class="col-md-4">
+       <hr class="light">
+       <h5>Service Area</h5>
+       <hr class="light">
+       <p>City, State, 00000</p>
+       <p>City, State, 00000</p>
+       <p>City, State, 00000</p>
+       <p>City, State, 00000</p>
+     </div>
+     <div class="col-12">
+       <hr class="light w-100">
+       <h5 class="lead" style="font-family:cursive">&copy; LIFESTYLE STORE</h5>
+     </div>
+   </div>
+  </div>
+  </footer>
+  <!--Footer Sections Ends-->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Louis Moinet</title>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hmt.css">
+    <style>
+      .carousel-caption h3
+      {
+        font-family: cursive;
+        font-style: italic;
+        font-variant: small-caps;
+        font-weight: 600;
+        font-size: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      #jq
+      {
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        padding: 50px;
+        display: none;
+      }
+      #jq1
+      {
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        padding: 50px;
+        display: none;
+      }
+      #jq2
+      {
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        padding: 50px;
+        display: none;
+      }
+      h5
+      {
+        font-weight:bold;
+        font-family:cursive;
+      }
+      table,th,td
+      {
+        padding-left:250px;
+        text-align:justify;
+        width:50%;
+      }
+      .cost
+      {
+        padding-left: 104px;
+        font-weight:bold;
+        font-family:cursive;
+      }
+      #cost
+      {
+        padding-left: 94px;
+        font-weight:bold;
+        font-family:cursive;
+      }
+      #gallery
+      {
+        background-color:white;
+      }
+      #gallery img
+      {
+        width: 300px;
+        height: 256px;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#btn1").click(function(){
+          $("#jq").fadeIn(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#back").click(function(){
+          $("#jq").fadeOut(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#btn2").click(function(){
+          $("#jq1").fadeIn(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#back1").click(function(){
+          $("#jq1").fadeOut(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#btn3").click(function(){
+          $("#jq2").fadeIn(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#back2").click(function(){
+          $("#jq2").fadeOut(3000);
+        });
+      });
+    </script>
+</head>
+<body>
+  <!--Navigation Bar Start-->
+  <header>
+    <nav class="navbar navbar-expand-md sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html" style="font-size:25px" id="OS">LIFESTYLE STORE</a>
+        <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html"  onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="canon.html">Camera</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="rolex.html">Hand Watches</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="hp.html">Laptops</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bottom" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html" onmouseover="this.style.color='orange'" onmouseout="this.style.color='black'">Contact Us</a>
+            </li>
+            <li class="nav-item">
+            <a href="landingpage.html"><button type="button" class="btn btn-dark btn-outline-dark">Logout</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Navigation Bar Ends-->
+
+  <!--Title Section Start-->
+  <section>
+    <div class="jumbotron jumbotron-fluid text-center py-4 my-0">
+    <div class="container-fluid">
+      <h1 class="display-4 text-color-pink">LOUIS MOINET</h1>
+      <p class="lead">The first chronograph-watch, be veteran with Louis Moinet</p>
+    </div>
+  </div>
+  </section>
+  <!--Title Section Ends-->
+
+  <!--Places Cards Start-->
+  <section>
+  <div class="container-fluid py-5">
+    <hr class="w-25 mx-auto">
+    <h1 class="text-center text-capitalize pt-2">ITEMS</h1>
+    <hr class="w-25 mx-auto pt-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12 pl-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="Images/tempograph.jpg" alt="Card image cap" width="300" height="256">
+            <div class="card-body">
+              <h5 class="card-title">20 Second - Tempograph</h5>
+              <hr w-25 mx-auto pt-3>
+              <p class="card-text">Contents will be added later.............</p>
+              <button type="button" class="btn btn-primary" id="btn1">Read More</button><span class="cost">Cost:$ 46,000</span>
+            </div>
+         </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-12 pl-5">
+         <div class="card h-100">
+           <img class="card-img-top" src="Images/jurassic.jpg" alt="Card image cap" width="300" height="256">
+             <div class="card-body">
+               <h5 class="card-title">Jurassic Watch</h5>
+               <hr w-25 mx-auto pt-1>
+               <p class="card-text">Contents will be added later.............</p>
+               <button type="button" class="btn btn-primary" id="btn2">Read More</button><span class="cost">Cost:$60,200</span>
+             </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 pl-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="Images/qatar.jpg" alt="Card image cap" width="300" height="256">
+              <div class="card-body">
+                <h5 class="card-title">Mecanograph Qatar</h5>
+                <hr w-25 mx-auto pt-1>
+                <p class="card-text">Contents will be added later.............</p>
+                <button type="button" class="btn btn-primary" id="btn3">Read More</button><span id="cost">Cost:$29,900</span>
+              </div>
+           </div>
+         </div>
+    </div>
+  </div>
+  </section>
+  <!--Places Cards Ends-->
+
+  <!--Tempograph-->
+  <section>
+    <div class="container-fluid py-5" id="jq">
+      <hr class="w-50 mx-auto">
+      <h1 class="text-center text-capitalize pt-2">20-SECOND TEMPOGRAPH</h1>
+      <hr class="w-50 mx-auto pt-5">
+      <div class="container-fluid">
+        <p class="lead" style="text-align:center"><u>Specifications</u></p>
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <td scope="row">Full Model Name:</td>
+              <td>20-Second Tempograph</td>
+            </tr>
+            <tr>
+              <td scope="row">Body</td>
+              <td>Blue Steel Hands</td>
+            </tr>
+            <tr>
+              <td scope="row">Movement</td>
+              <td>Automatic</td>
+            </tr>
+            <tr>
+              <td scope="row">Dial-diameter</td>
+              <td>44mm</td>
+            </tr>
+            <tr>
+              <td scope="row">Metal</td>
+              <td>Cerachrom bezel insert in Silver ceramic</td>
+            </tr>
+            <tr>
+              <td scope="row">Water-Resistent</td>
+              <td>100 minutes</td>
+            </tr>
+            <tr>
+              <td scope="row">Dial Color</td>
+              <td>Silver, Skeletonized, White</td>
+            </tr>
+            <tr>
+              <td scope="row">Belt</td>
+              <td>Leather</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="lead" style="text-align:left"><b><u>INCLUSIONS:</u></b><br> 1. Watch Case<br>2. Cleaner <br>3. Blower<br>4. Receipt<br>
+          </div>
+          <div class="container-fluid py-5" id="gallery">
+            <hr class="w-25 mx-auto">
+            <h1 class="text-center text-capitalize pt-2">GALLERY</h1>
+            <hr class="w-25 mx-auto pt-5">
+            <div class="row">
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/tempograph1.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/tempograph2.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/tempograph3.jpg" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+              <a href="cart.html"><button type="button" class="btn btn-primary" style="margin-top:20px;">Buy Now</button></a>
+              <button type="button" class="btn btn-primary" style="margin-top:20px;" id="back">Back to Top</button>
+            </div>
+        </div>
+    </section>
+  <!--Tempograph Ends-->
+
+  <!--Jurassic Watch-->
+  <section>
+    <div class="container-fluid py-5" id="jq1">
+      <hr class="w-50 mx-auto">
+      <h1 class="text-center text-capitalize pt-2">JURASSIC WATCH</h1>
+      <hr class="w-50 mx-auto pt-5">
+      <div class="container-fluid">
+        <p class="lead" style="text-align:center"><u>Specifications</u></p>
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <td scope="row">Full Model Name:</td>
+              <td>Jurassic Watch L.E. LM-34-50-01</td>
+            </tr>
+            <tr>
+              <td scope="row">Body</td>
+              <td>Chronometer, Date, Display Black, Luminescent Hand, Small Second</td>
+            </tr>
+            <tr>
+              <td scope="row">Movement</td>
+              <td>Automatic</td>
+            </tr>
+            <tr>
+              <td scope="row">Dial-diameter</td>
+              <td>44mm</td>
+            </tr>
+            <tr>
+              <td scope="row">Metal</td>
+              <td>Cerachrom bezel insert in Silver ceramic</td>
+            </tr>
+            <tr>
+              <td scope="row">Case Material</td>
+              <td>Rose Gold/Red Gold</td>
+            </tr>
+            <tr>
+              <td scope="row">Dial Color</td>
+              <td>Red</td>
+            </tr>
+            <tr>
+              <td scope="row">Belt</td>
+              <td>Leather</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="lead" style="text-align:left"><b><u>INCLUSIONS:</u></b><br> 1. Watch Case<br>2. Cleaner <br>3. Blower<br>4. Receipt<br>
+          </div>
+          <div class="container-fluid py-5" id="gallery">
+            <hr class="w-25 mx-auto">
+            <h1 class="text-center text-capitalize pt-2">GALLERY</h1>
+            <hr class="w-25 mx-auto pt-5">
+            <div class="row">
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/jurassic1.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/jurassic2.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/jurassic3.jpg" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+              <a href="cart.html"><button type="button" class="btn btn-primary" style="margin-top:20px;">Buy Now</button></a>
+              <button type="button" class="btn btn-primary" style="margin-top:20px;" id="back1">Back to Top</button>
+            </div>
+        </div>
+    </section>
+  <!--Jurassic Watch Ends-->
+
+    <!--Mecanograph Qatar-->
+    <section>
+      <div class="container-fluid py-5" id="jq2">
+        <hr class="w-50 mx-auto">
+        <h1 class="text-center text-capitalize pt-2">MECANOGRAPH QATAR</h1>
+        <hr class="w-50 mx-auto pt-5">
+        <div class="container-fluid">
+          <p class="lead" style="text-align:center"><u>Specifications</u></p>
+          <table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <td scope="row">Full Model Name:</td>
+                <td>Mecanograph Qatar L.E. LM-31.50.6Q</td>
+              </tr>
+              <tr>
+                <td scope="row">Body</td>
+                <td>Display Back, Limited Edition, Luminescent Hands, Small Second</td>
+              </tr>
+              <tr>
+                <td scope="row">Movement</td>
+                <td>Automatic</td>
+              </tr>
+              <tr>
+                <td scope="row">Dial-diameter</td>
+                <td>44mm & 45mm</td>
+              </tr>
+              <tr>
+                <td scope="row">Metal</td>
+                <td>Cerachrom bezel insert in Silver ceramic</td>
+              </tr>
+              <tr>
+                <td scope="row">Water-Resistent</td>
+                <td>100 minutes</td>
+              </tr>
+              <tr>
+                <td scope="row">Dial Color</td>
+                <td>Black</td>
+              </tr>
+              <tr>
+                <td scope="row">Belt</td>
+                <td>Leather</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="lead" style="text-align:left"><b><u>INCLUSIONS:</u></b><br> 1. Watch Case<br>2. Cleaner <br>3. Blower<br>4. Receipt<br>
+            </div>
+            <div class="container-fluid py-5" id="gallery">
+              <hr class="w-25 mx-auto">
+              <h1 class="text-center text-capitalize pt-2">GALLERY</h1>
+              <hr class="w-25 mx-auto pt-5">
+              <div class="row">
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                  <img src= "Images/qatar1.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                  <img src= "Images/qatar2.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                  <img src= "Images/qatar3.jpg" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+                <a href="cart.html"><button type="button" class="btn btn-primary" style="margin-top:20px;">Buy Now</button></a>
+                <button type="button" class="btn btn-primary" style="margin-top:20px;" id="back2">Back to Top</button>
+              </div>
+          </div>
+      </section>
+    <!--Mecanograph Qatar Ends-->
+
+  <!--Footer Section Starts-->
+  <footer id="bottom">
+   <div class="container-fluid padding">
+   <div class="row text-center">
+     <div class="col-md-4">
+       <p class="lead" style="font-family:cursive">LIFESTYLE STORE</p>
+       <hr class="light">
+       <p>+917717562336</p>
+       <p>+918003951093</p>
+       <p>lifestylestore@gmail.com</p>
+       <p>Office Address</p>
+       <p>City, State, pincode</p>
+     </div>
+     <div class="col-md-4">
+       <hr class="light">
+       <h5>Our Hours</h5>
+       <hr class="light">
+       <p>Monday: 9am - 5pm</p>
+       <p>Saturday: 10am - 4pm</p>
+       <p>Sunday: closed</p>
+     </div>
+     <div class="col-md-4">
+       <hr class="light">
+       <h5>Service Area</h5>
+       <hr class="light">
+       <p>City, State, 00000</p>
+       <p>City, State, 00000</p>
+       <p>City, State, 00000</p>
+       <p>City, State, 00000</p>
+     </div>
+     <div class="col-12">
+       <hr class="light w-100">
+       <h5 class="lead" style="font-family:cursive">&copy; LIFESTYLE STORE</h5>
+     </div>
+   </div>
+  </div>
+  </footer>
+  <!--Footer Sections Ends-->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

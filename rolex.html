@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rolex</title>
+  <head lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hmt.css">
+    <style>
+      .carousel-caption h3
+      {
+        font-family: cursive;
+        font-style: italic;
+        font-variant: small-caps;
+        font-weight: 600;
+        font-size: 60px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      #jq
+      {
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        padding: 50px;
+        display: none;
+      }
+      #jq1
+      {
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        padding: 50px;
+        display: none;
+      }
+      #jq2
+      {
+        text-align: center;
+        background-color: #e5eecc;
+        border: solid 1px #c3c3c3;
+        padding: 50px;
+        display: none;
+      }
+      h5
+      {
+        font-weight:bold;
+        font-family:cursive;
+      }
+      table,th,td
+      {
+        padding-left:250px;
+        text-align:justify;
+        width:50%;
+      }
+      .cost
+      {
+        padding-left: 104px;
+        font-weight:bold;
+        font-family:cursive;
+      }
+      #cost
+      {
+        padding-left: 94px;
+        font-weight:bold;
+        font-family:cursive;
+      }
+      #gallery
+      {
+        background-color:white;
+      }
+      #gallery img
+      {
+        width: 300px;
+        height: 256px;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#btn1").click(function(){
+          $("#jq").fadeIn(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#back").click(function(){
+          $("#jq").fadeOut(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#btn2").click(function(){
+          $("#jq1").fadeIn(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#back1").click(function(){
+          $("#jq1").fadeOut(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#btn3").click(function(){
+          $("#jq2").fadeIn(3000);
+        });
+      });
+      $(document).ready(function(){
+        $("#back2").click(function(){
+          $("#jq2").fadeOut(3000);
+        });
+      });
+    </script>
+</head>
+<body>
+  <!--Navigation Bar Start-->
+  <header>
+    <nav class="navbar navbar-expand-md sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html" style="font-size:25px" id="OS">LIFESTYLE STORE</a>
+        <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarResponsive">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html"  onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Products
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="sony.html">Camera</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="ulysse.html">Hand Watches</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="hp.html">Laptops</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#bottom" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html" onmouseover="this.style.color='orange'" onmouseout="this.style.color='black'">Contact Us</a>
+            </li>
+            <li class="nav-item">
+            <a href="landingpage.html"><button type="button" class="btn btn-dark btn-outline-dark">Logout</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Navigation Bar Ends-->
+
+  <!--Title Section Start-->
+  <section>
+    <div class="jumbotron jumbotron-fluid text-center py-4 my-0">
+    <div class="container-fluid">
+      <h1 class="display-4 text-color-pink">ROLEX</h1>
+      <p class="lead">A Crown for Every Achievement, be classy, be king, be different</p>
+    </div>
+  </div>
+  </section>
+  <!--Title Section Ends-->
+
+  <!--Places Cards Start-->
+  <section>
+  <div class="container-fluid py-5">
+    <hr class="w-25 mx-auto">
+    <h1 class="text-center text-capitalize pt-2">ITEMS</h1>
+    <hr class="w-25 mx-auto pt-5">
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12 pl-5">
+        <div class="card h-100">
+          <img class="card-img-top" src="Images/yatch.jpg" alt="Card image cap" width="300" height="256">
+            <div class="card-body">
+              <h5 class="card-title">YATCH MASTER 42</h5>
+              <hr w-25 mx-auto pt-3>
+              <p class="card-text">Contents will be added later.............</p>
+              <button type="button" class="btn btn-primary" id="btn1">Read More</button><span class="cost">Cost:INR 8,065</span>
+            </div>
+         </div>
+       </div>
+       <div class="col-lg-4 col-md-4 col-12 pl-5">
+         <div class="card h-100">
+           <img class="card-img-top" src="Images/seadweller1.jpg" alt="Card image cap" width="300" height="256">
+             <div class="card-body">
+               <h5 class="card-title">SEA DWELLER</h5>
+               <hr w-25 mx-auto pt-1>
+               <p class="card-text">Contents will be added later.............</p>
+               <button type="button" class="btn btn-primary" id="btn2">Read More</button><span class="cost">Cost:INR 43,000</span>
+             </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-12 pl-5">
+          <div class="card h-100">
+            <img class="card-img-top" src="Images/gmt.jpg" alt="Card image cap" width="300" height="256">
+              <div class="card-body">
+                <h5 class="card-title">GMT MASTER II</h5>
+                <hr w-25 mx-auto pt-1>
+                <p class="card-text">Contents will be added later.............</p>
+                <button type="button" class="btn btn-primary" id="btn3">Read More</button><span id="cost">Cost:INR 584,300</span>
+              </div>
+           </div>
+         </div>
+    </div>
+  </div>
+  </section>
+  <!--Places Cards Ends-->
+
+  <!--YATCH MASTER-->
+  <section>
+    <div class="container-fluid py-5" id="jq">
+      <hr class="w-50 mx-auto">
+      <h1 class="text-center text-capitalize pt-2">YATCH MASTER 42</h1>
+      <hr class="w-50 mx-auto pt-5">
+      <div class="container-fluid">
+        <p class="lead" style="text-align:center"><u>Specifications</u></p>
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th scope="col"><u>Type</u></th>
+              <th scope="col"><u>Description</u></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">Full Model Name:</td>
+              <td>The Oyester Perpetual Yatch-Master 42</td>
+            </tr>
+            <tr>
+              <td scope="row">Body</td>
+              <td>Bidirectional Rotable Bezel</td>
+            </tr>
+            <tr>
+              <td scope="row">Case Material</td>
+              <td>18k white gold</td>
+            </tr>
+            <tr>
+              <td scope="row">Dial-diameter</td>
+              <td>42mm</td>
+            </tr>
+            <tr>
+              <td scope="row">Metal</td>
+              <td>Cerachrom bezel insert in matt black ceramic</td>
+            </tr>
+            <tr>
+              <td scope="row">Water-Resistent</td>
+              <td>100 minutes</td>
+            </tr>
+            <tr>
+              <td scope="row">Dial Color</td>
+              <td>Black</td>
+            </tr>
+            <tr>
+              <td scope="row">Belt</td>
+              <td>Oysterflex bracelet with white gold Oysterlock clasp</td>
+            </tr>
+            <tr>
+              <td scope="row">Lume</td>
+              <td>Chromalight on hands and hour markers</td>
+            </tr>
+            <tr>
+              <td scope="row">Indexes</td>
+              <td>Applied white gold and Chromalight</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="lead" style="text-align:left"><b><u>INCLUSIONS:</u></b><br> 1. Watch Case<br>2. Cleaner <br>3. Blower<br>4. Receipt<br>
+          </div>
+          <div class="container-fluid py-5" id="gallery">
+            <hr class="w-25 mx-auto">
+            <h1 class="text-center text-capitalize pt-2">GALLERY</h1>
+            <hr class="w-25 mx-auto pt-5">
+            <div class="row">
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/yatch1.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/yatch2.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/yatch3.jpg" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+              <a href="cart.html"><button type="button" class="btn btn-primary" style="margin-top:20px;">Buy Now</button></a>
+              <button type="button" class="btn btn-primary" style="margin-top:20px;" id="back">Back to Top</button>
+            </div>
+        </div>
+    </section>
+  <!--YATCH MASTER Ends-->
+
+  <!--SEA DWELLER-->
+  <section>
+    <div class="container-fluid py-5" id="jq1">
+      <hr class="w-50 mx-auto">
+      <h1 class="text-center text-capitalize pt-2">SEA DWELLER</h1>
+      <hr class="w-50 mx-auto pt-5">
+      <div class="container-fluid">
+        <p class="lead" style="text-align:center"><u>Specifications</u></p>
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th scope="col"><u>Type</u></th>
+              <th scope="col"><u>Description</u></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td scope="row">Full Model Name:</td>
+              <td>Sea Dweller Oyester Stell</td>
+            </tr>
+            <tr>
+              <td scope="row">Body</td>
+              <td>Bidirectional Rotable Bezel</td>
+            </tr>
+            <tr>
+              <td scope="row">Case Material</td>
+              <td>Ceramic Bezel and Luminescent Display</td>
+            </tr>
+            <tr>
+              <td scope="row">Dial-diameter</td>
+              <td>43mm</td>
+            </tr>
+            <tr>
+              <td scope="row">Metal</td>
+              <td>The graduation is coated via PVD (Physical Vapour Deposition) with a thin layer of gold</td>
+            </tr>
+            <tr>
+              <td scope="row">Water-Resistent</td>
+              <td>100 minutes</td>
+            </tr>
+            <tr>
+              <td scope="row">Dial Color</td>
+              <td>Black</td>
+            </tr>
+            <tr>
+              <td scope="row">Belt</td>
+              <td> Adjustable upto 20mm and 3mm thick Oysterflex bracelet with white gold Oysterlock clasp</td>
+            </tr>
+            <tr>
+              <td scope="row">Lume</td>
+              <td>The sleek black dial features large Chromalight hour markers and hands, filled with luminescent material that emits a long-lasting blue glow for excellent legibility in dark conditions</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="lead" style="text-align:left"><b><u>INCLUSIONS:</u></b><br> 1. Watch Case<br>2. Cleaner <br>3. Blower<br>4. Receipt<br>
+          </div>
+          <div class="container-fluid py-5" id="gallery">
+            <hr class="w-25 mx-auto">
+            <h1 class="text-center text-capitalize pt-2">GALLERY</h1>
+            <hr class="w-25 mx-auto pt-5">
+            <div class="row">
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/seadweller.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/seadweller2.jpg" class="img-fluid">
+              </div>
+              <div class="col-lg-4 col-md-2 col-12 mb-4">
+                <img src= "Images/seadweller3.jpg" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <div class="container-fluid">
+              <a href="cart.html"><button type="button" class="btn btn-primary" style="margin-top:20px;">Buy Now</button></a>
+              <button type="button" class="btn btn-primary" style="margin-top:20px;" id="back1">Back to Top</button>
+            </div>
+        </div>
+    </section>
+  <!--SEA DWELLER Ends-->
+
+    <!--GMT MASTER II-->
+    <section>
+      <div class="container-fluid py-5" id="jq2">
+        <hr class="w-50 mx-auto">
+        <h1 class="text-center text-capitalize pt-2">GMT MASTER II OYESTERSTEEL</h1>
+        <hr class="w-50 mx-auto pt-5">
+        <div class="container-fluid">
+          <p class="lead" style="text-align:center"><u>Specifications</u></p>
+          <table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th scope="col"><u>Type</u></th>
+                <th scope="col"><u>Description</u></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td scope="row">Full Model Name:</td>
+                <td>GMT Master II Oyestersteel</td>
+              </tr>
+              <tr>
+                <td scope="row">Body</td>
+                <td>bidirectional rotatable 24-hour graduated bezel</td>
+              </tr>
+              <tr>
+                <td scope="row">Case Material</td>
+                <td>Ceramic Bezel and Luminescent Display</td>
+              </tr>
+              <tr>
+                <td scope="row">Dial-diameter</td>
+                <td>40mm</td>
+              </tr>
+              <tr>
+                <td scope="row">Metal</td>
+                <td>The graduation is coated via PVD (Physical Vapour Deposition) with a thin layer of gold</td>
+              </tr>
+              <tr>
+                <td scope="row">Water-Resistent</td>
+                <td>100 minutes</td>
+              </tr>
+              <tr>
+                <td scope="row">Dial Color</td>
+                <td>Black</td>
+              </tr>
+              <tr>
+                <td scope="row">Belt</td>
+                <td>Adjustable Oyesterflex and Oyesterlock</td>
+              </tr>
+              <tr>
+                <td scope="row">Lume</td>
+                <td>The sleek black dial features large Chromalight hour markers and hands, filled with luminescent material that emits a long-lasting blue glow for excellent legibility in dark conditions</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="lead" style="text-align:left"><b><u>INCLUSIONS:</u></b><br> 1. Watch Case<br>2. Cleaner <br>3. Blower<br>4. Receipt<br>
+            </div>
+            <div class="container-fluid py-5" id="gallery">
+              <hr class="w-25 mx-auto">
+              <h1 class="text-center text-capitalize pt-2">GALLERY</h1>
+              <hr class="w-25 mx-auto pt-5">
+              <div class="row">
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                  <img src= "Images/gmt1.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                  <img src= "Images/gmt2.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-4 col-md-2 col-12 mb-4">
+                  <img src= "Images/gmt3.jpg" class="img-fluid">
+                </div>
+              </div>
+            </div>
+            <div class="container-fluid">
+                <a href="cart.html"><button type="button" class="btn btn-primary" style="margin-top:20px;">Buy Now</button></a>
+                <button type="button" class="btn btn-primary" style="margin-top:20px;" id="back2">Back to Top</button>
+              </div>
+          </div>
+      </section>
+    <!--GMT MASTER II Ends-->
+
+  <!--Footer Section Starts-->
+  <footer id="bottom">
+   <div class="container-fluid padding">
+   <div class="row text-center">
+     <div class="col-md-4">
+       <p class="lead" style="font-family:cursive">LIFESTYLE STORE</p>
+       <hr class="light">
+       <p>+917717562336</p>
+       <p>+918003951093</p>
+       <p>lifestylestore@gmail.com</p>
+       <p>Office Address</p>
+       <p>City, State, pincode</p>
+     </div>
+     <div class="col-md-4">
+       <hr class="light">
+       <h5>Our Hours</h5>
+       <hr class="light">
+       <p>Monday: 9am - 5pm</p>
+       <p>Saturday: 10am - 4pm</p>
+       <p>Sunday: closed</p>
+     </div>
+     <div class="col-md-4">
+       <hr class="light">
+       <h5>Service Area</h5>
+       <hr class="light">
+       <p>City, State, 00000</p>
+       <p>City, State, 00000</p>
+       <p>City, State, 00000</p>
+       <p>City, State, 00000</p>
+     </div>
+     <div class="col-12">
+       <hr class="light w-100">
+       <h5 class="lead" style="font-family:cursive">&copy; LIFESTYLE STORE</h5>
+     </div>
+   </div>
+  </div>
+  </footer>
+  <!--Footer Sections Ends-->
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

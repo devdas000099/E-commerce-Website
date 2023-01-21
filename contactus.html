@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="landingpage.css">
+        <style>
+          label
+          {
+            color: white;
+            font-weight: bold;
+            font-family: cursive;
+            font-size: 20px;
+          }
+          body
+          {
+            background-image: url("Images/login5.jpg");
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: new time roman;
+          }
+          .form-control
+          {
+            background: transparent;
+            border-radius: 0px;
+            border: 0px;
+            border-bottom: 1px solid white;
+            font-size: 18px;
+            margin-top: 12px;
+            height: 30px;
+            color: white;
+          }
+          #contact
+          {
+            box-shadow: -1px 1px 80px 10px black;
+            background: rgba(0,0,0,0.4);
+            background-attachment: fixed;
+          }
+          input[type="text"]::placeholder
+          {
+            color: white;
+          }
+          input[type="email"]::placeholder
+          {
+            color: white;
+          }
+        </style>
+    </head>
+    <body style="background-image:url('Images/landing.jpg')">
+      <!--Navigation Bar Start-->
+      <header>
+        <nav class="navbar navbar-expand-md sticky-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="home.html" style="font-size:25px" id="OS">LIFESTYLE STORE</a>
+            <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#navbarResponsive">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html"  onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Products
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="canon.html">Camera</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="ulysse.html">Hand Watches</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="asus.html">Laptops</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" onmouseover="this.style.color='green'" onmouseout="this.style.color='black'">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactus.html" onmouseover="this.style.color='orange'" onmouseout="this.style.color='black'">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                <a href="landingpage.html"><button type="button" class="btn btn-dark btn-outline-dark">Logout</button></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!--Navigation Bar Ends-->
+
+
+      <!--Contact Form Starts-->
+      <section>
+        <div class="container-fluid" id="contact">
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 py-4">
+                    <h1 style="text-align:center; text-decoration:underline; color:white"><pre style="color:white">MESSAGE US</pre></h1>
+                    <p class="lead" style="text-align:center;color:white" >Please share your valuable message to us through this form.</p>
+                    <!-- We're going to place the form here in the next step -->
+                    <form id="contact-form" method="post" role="form" onsubmit="return validation()">
+                      <div class="messages"></div>
+                      <div class="controls">
+                        <div class="row">
+                          <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="form_name">Firstname *</label>
+                      <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required." onkeyup="validationfirst()">
+                      <span id="firsterror" class="text-danger font-weight-bold"></span>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="form_lastname">Lastname *</label>
+                      <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required." onkeyup="validationlast()">
+                      <span id="lasterror" class="text-danger font-weight-bold"></span>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="form_email">Email *</label>
+                      <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" onkeyup="validationemail()">
+                      <span id="emailerror" class="text-danger font-weight-bold"></span>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group">
+                      <label for="form_need">Please specify your need *</label>
+                      <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                          <option value=""></option>
+                          <option value="Request quotation">Request quotation</option>
+                          <option value="Request copy of an invoice">Request copy of an invoice</option>
+                          <option value="Other">Other</option>
+                      </select>
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="form-group">
+                      <label for="form_message">Message *</label>
+                      <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                      <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+              <div class="col-md-12">
+                  <input type="submit" class="btn btn-success btn-send" value="Send message">
+              </div>
+            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-muted">
+                          <strong>*</strong>These fields are required.
+                    </div>
+                </div>
+              </div>
+            </form>
+              </div>
+            </div>
+            <hr style="color:white" size="30">
+              <h4 class="text-center text-capitalize" style="color:white; font-size:30px">OR</h4>
+              <h5 class="text-center text-capitalize pt-2" style="color:white; font-size:40px"><u>Connect Us via:</u></h5>
+              <div class="col-12 social pl-5 text-center pt-2" style="font-size:3rem; padding:4rem" id="contact">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+              </div>
+        </div>
+        </section>
+        <!--Contact form ends-->
+        <script>
+        function validationfirst()
+        {
+          var fname = document.getElementById('form_name').value;
+          var pattern = /^[A-Za-z .]{3,20}$/ ;
+          if(pattern.test(fname))
+          {
+            document.getElementById('form_name').style.backgroundColor = 'Green';
+          }
+          else
+          {
+            document.getElementById('form_name').style.backgroundColor = 'Red';
+          }
+        }
+        function validationlast()
+        {
+          var lname = document.getElementById('form_lastname').value;
+          var pattern = /^[A-Za-z]{3,20}$/ ;
+          if(pattern.test(lname))
+          {
+            document.getElementById('form_lastname').style.backgroundColor = 'Green';
+          }
+          else
+          {
+            document.getElementById('form_lastname').style.backgroundColor = 'Red';
+          }
+        }
+        function validationemail()
+        {
+          var email = document.getElementById('form_email').value;
+          var pattern = /^[A-Za-z_0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/ ;
+          if(pattern.test(email))
+          {
+            document.getElementById('form_email').style.backgroundColor = 'Green';
+          }
+          else
+          {
+            document.getElementById('form_email').style.backgroundColor = 'Red';
+          }
+        }
+        function validation()
+        {
+          var fname = document.getElementById('form_name').value;
+          var lname = document.getElementById('form_lastname').value;
+          var email = document.getElementById('form_email').value;
+          var fpattern = /^[A-Za-z .]{3,20}$/ ;
+          var lpattern = /^[A-Za-z]{3,20}$/ ;
+          var epattern = /^[A-Za-z_0-9]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/ ;
+          if(fpattern.test(fname))
+          {
+            document.getElementById('firsterror').innerHTML = " ";
+          }
+          else
+          {
+            document.getElementById('firsterror').innerHTML = "***Firstname is Invalid";
+            return false;
+          }
+          if(lpattern.test(lname))
+          {
+            document.getElementById('lasterror').innerHTML = " ";
+          }
+          else
+          {
+            document.getElementById('lasterror').innerHTML = "***Lastname is Invalid";
+            return false;
+          }
+          if(epattern.test(email))
+          {
+            document.getElementById('emailerror').innerHTML = " ";
+          }
+          else
+          {
+            document.getElementById('emailerror').innerHTML = "***Email is Invalid";
+            return false;
+          }
+          alert("Thank You" + " " + fname +" " + lname + " " + "you will be contacted via email" + " " + email);
+        }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    </body>
+</html>
